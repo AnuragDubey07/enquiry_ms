@@ -1,0 +1,19 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<h1 style="color: coral; text-align: center;"><br>Welcome to Admin Dashboard</h1><br><br>
+<center>
+<form action="{% url 'home' %}" method="post" >
+    {% csrf_token %}
+
+<input type="submit" value="Logout"><br><br>
+</form>
+
+<form action="{% url 'showquery' %}" method="post" >
+    {% csrf_token %}
+
+<input type="submit" value=" Show All Queries!!">
+</form>
+</center>
+
+{% endblock content %}

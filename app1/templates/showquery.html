@@ -1,0 +1,57 @@
+{% extends 'index.html' %}
+{% block content %}
+<style>
+    #qrecord{
+        background-color: white;
+        border-radius: 20px;
+        padding: 10px;
+    }
+</style>
+<h1 align="center" style="color: coral;"><br>All Query Records:-</h1><br><br>
+<center>
+<table border="2" id="qrecord">
+<tr>
+    <th>S.No</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Contact</th>
+    <th>Query</th>
+    <th>Update</th>
+    <th>Delete</th>
+</tr>
+
+{% for j,i in d.items %}
+
+
+<tr>
+    <td>{{j}}</td>
+    <td>{{i.Name}}</td>
+    <td>{{i.Email}}</td>
+    <td>{{i.Contact}}</td>
+    <td>{{i.Query}}</td>
+    <td>
+        <form action="{% url 'update' i.id %}" method="post">
+            {% csrf_token %}
+            <input type="submit" value="Update">
+            </form>
+    </td>
+    <td>
+        <form action="{% url 'delete' i.id %}" method="post">
+            {% csrf_token %}
+            <input type="submit" value="Delete">
+            </form>
+    </td>
+</tr>
+{% endfor %}
+
+</table>
+<form action="{% url 'home' %}" method="post" ><br><br>
+    {% csrf_token %}
+
+<input type="submit" value="Logout">
+</form>
+
+</center>
+
+{% endblock content %}
+

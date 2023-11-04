@@ -1,0 +1,89 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  body {
+    background-image: url("../images/mk05.jpg");
+    
+  }
+  #msg{
+    color: coral;
+    margin:  auto;
+    
+  }
+  #nav {
+    height: 70px;
+    background-color: rgb(25, 86, 96, 1.8);
+    color: coral;
+  }
+  .foot {
+    margin-top: 100px;
+    padding: 1.5rem;
+    height: 70px;
+    background-color: rgb(25, 86, 96, 1.8);
+    color: coral;
+  }
+  .main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .head {
+    text-align: center;
+    font-family: sans-serif;
+    padding: 15px;
+    font-size: 30px;
+  }
+  .one {
+    width: 300px;
+    height: 300px;
+    border: 2px;
+    border-radius: 20%;
+    background-color: rgb(39, 66, 66, 0.3);
+    color: coral;
+    padding: 15px;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: auto;
+  }
+  .two {
+    width: 300px;
+    height: 300px;
+    margin-right: 100px;
+    border: 2px;
+    border-radius: 20%;
+    background-color: rgb(39, 66, 66, 0.3);
+    color: coral;
+    padding: 15px;
+    margin-top: 100px;
+  }
+  .btn {
+    margin-left: 50px;
+    width: 200px;
+    height: 50px;
+  }
+  .form {
+    width: 600px;
+    margin-left: 360px;
+    border:  2px;
+    border-radius: 10px;
+    background-color: rgb(39, 66, 66, 0.3);
+    color: grey;
+    padding: 50px;
+    margin-top: 50px;
+    padding-left: 180px;
+  }
+  input {
+    width: 250px;
+    height: 40px;
+  }
+  input[type="submit"] {
+    width: 180px;
+    height: 40px;
+  }
+  ::placeholder {
+    font-size: 20px;
+    padding-left: 10px;
+  }
+  
